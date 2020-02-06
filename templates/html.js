@@ -27,18 +27,18 @@ const generateHTML = function (teamstr) {
 const generateCard = function (arr) {
     let roleInfo;
 
-    if (arr.title === "Manager") {
-        roleInfo = `Office Number: ${arr.officeNumber}`
-    } else if (arr.title === "Engineer") {
+    if (arr.role === "Manager") {
+        roleInfo = `Office Number: ${arr.office}`
+    } else if (arr.role === "Engineer") {
         roleInfo = `Github Username: ${arr.github}`
-    } else if (arr.title === "Intern") {
+    } else if (arr.role === "Intern") {
         roleInfo = `School: ${arr.school}`
     }
 
     return `<div class="card">
 <div class="card-header">
 <h2>${arr.name}</h2>  
-<h2><i class="icon"></i> ${arr.title}</h2>
+<h2><i class="role"></i> ${arr.role}</h2>
 <hr>
 </div>
 <div class="card-body">

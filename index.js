@@ -62,9 +62,9 @@ async function prompt() {
                     name: "role",
                     message: "What what is the employee's role:",
                     choices: [
+                        "Manager",
                         "Engineer",
-                        "Intern",
-                        "Manager"
+                        "Intern"
                     ]
                 }
             ]);
@@ -77,7 +77,7 @@ async function prompt() {
                     name: "x",
                     message: "What is the employee's github username?:",
                 },]);
-                const engineer = new Engineer(response.name, response.id, response.email, response2.x);
+                const engineer = new Engineer(response.name, response.id, response.email, response2.x, response.role);
                 teamArray.push(engineer);
             } else if (response.role === "Intern") {
                 response2 = await inquirer.prompt([{
@@ -85,7 +85,7 @@ async function prompt() {
                     name: "x",
                     message: "What school is the employee attending?:",
                 },]);
-                const intern = new Intern(response.name, response.id, response.email, response2.x);
+                const intern = new Intern(response.name, response.id, response.email, response2.x, response.role);
                 teamArray.push(intern);
             } else if (response.role === "Manager") {
                 response2 = await inquirer.prompt([{
@@ -93,7 +93,7 @@ async function prompt() {
                     name: "x",
                     message: "What is the employee's office number?:",
                 },]);
-                const manager = new Manager(response.name, response.id, response.email, response2.x);
+                const manager = new Manager(response.name, response.id, response.email, response2.x, response.role);
                 teamArray.push(manager);
             }
         } catch (err) {
