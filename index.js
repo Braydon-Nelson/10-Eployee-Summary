@@ -82,7 +82,6 @@ async function prompt() {
             } else if (response.role === "Intern") {
                 response2 = await inquirer.prompt([{
                     type: "input",
-
                     name: "x",
                     message: "What school is the employee attending?:",
                 },]);

@@ -38,7 +38,7 @@ const generateCard = function (arr) {
     return `<div class="card">
 <div class="card-header">
 <h2>${arr.name}</h2>  
-<h2><i class="far fa-user"></i> ${arr.title}</h2>
+<h2><i class="icon"></i> ${arr.title}</h2>
 <hr>
 </div>
 <div class="card-body">
