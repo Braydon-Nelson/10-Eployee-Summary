@@ -10,8 +10,8 @@ The purpose of this application is to allow a user to input their team's informa
 Main View of Output:
 ![Page View](./assets/start-view.jpg "Page View")
 
-Gif of User Interation:
-![User Interaction](./assets/quiz-view.jpg "User Interaction")
+Video on live GitHub Pages:
+https://braydon-nelson.github.io/10-Eployee-Summary/
 
 ### Problem
 
