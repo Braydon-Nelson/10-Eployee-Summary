@@ -8,6 +8,7 @@ The purpose of this application is to allow a user to input their team's informa
 ### Gallery
 
 Main View of Output:
+
 ![Page View](./assets/main-view.gif "Page View")
 
 Video on live GitHub Pages:
